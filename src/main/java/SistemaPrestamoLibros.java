@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SistemaPrestamoLibros {
     public static void main(String[] args) {
-        System.out.println("*** Sistema Prestamo Libros ***");
+        System.out.println("*** Sistema Préstamo Libros ***");
 
         final var KM_REDONDA_NECESARIOS = 3;
 
@@ -14,7 +14,7 @@ public class SistemaPrestamoLibros {
         System.out.print("¿A cuantos km a la redonda vive el usuario?: ");
         var kmRedonda = Integer.parseInt(consola.nextLine());
 
-        var esAptoPrestamoLibros = kmRedonda <= 3 || tieneCredencialEstudiante;
+        var esAptoPrestamoLibros = kmRedonda <= KM_REDONDA_NECESARIOS || tieneCredencialEstudiante;
         System.out.println("El usuario tiene acceso al préstamo de libros? : " + esAptoPrestamoLibros);
     }
 }
